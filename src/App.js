@@ -3,19 +3,26 @@ import './App.css';
 import {
   BrowserRouter as Router,
   
-  Route,
+  Route, Switch
  
 } from "react-router-dom";
 import HomePage from './HomePage/HomePage';
 import AboutUs from './AboutUs/AboutUs';
-
+import Nav from './Nav/Nav';
 
 function App() {
   return (
       <Router>
           <div className="App">
-          <Route path="/" component={HomePage} exact />
+
+          <Nav/>
+
+            <Switch>
+          <Route path="/" exact component={HomePage} exact />
           <Route path="/AboutUs" component={AboutUs} />
+          </Switch>
+
+
 
           </div>
       </Router>

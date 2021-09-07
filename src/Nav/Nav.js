@@ -16,7 +16,7 @@ function Nav(){
         
     <div>
         
-        <Navbar bg="dark" variant="dark">
+        <Navbar className="Navbarcolor">
     <Container>
       
 

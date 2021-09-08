@@ -1,8 +1,7 @@
 import './Nav.css';
-import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
-
+import Navbar from 'react-bootstrap/Navbar';
 
 
 
@@ -15,29 +14,23 @@ function Nav(){
 
         
     <div>
-        
+    
         <Navbar className="Navbarcolor">
     <Container>
       
 
-      
-<Link to='AboutUs'>
 
-<li>About Us</li>
+<Link className="btn1" to='/'>
+
+<p > Home Page </p>
 </Link>
 
-
-
-<Link to='/'>
-
-<li>AHome Page</li>
+<Link className="btn2" to='/About'>
+<p > About Us </p>
 </Link>
-
 
     </Container>
   </Navbar>
-
-
 
     </div>
         

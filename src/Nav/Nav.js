@@ -1,24 +1,54 @@
 import "./Nav.css";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
+import Navbar from 'react-bootstrap/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from 'react-bootstrap/Nav'
 
-function Nav() {
+
+function Nav1() {
   return (
     <div>
-      <Navbar className="Navbarcolor">
-        <Container>
-          <Link className="btn1" to="/">
-            <p> Home Page </p>
-          </Link>
+        <Navbar collapseOnSelect expand="lg" className="nav-color1" variant="dark">
+    
+    <Container>
+    <Navbar.Brand >
+        <img
+          alt=""
+          src="logoM.png"
+          width="170"
+          height="70"
+          className="d-inline-block align-top"
+        />{' '}
+        </Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav className="auto">
+       
 
-          <Link className="btn2" to="/AboutUs">
-            <p> About Us </p>
-          </Link>
-        </Container>
-      </Navbar>
+
+      <Link to='/' className="auto1"> 
+      <li className="button-color" > Home</li> 
+       </Link>
+
+       
+     <Link to='/AboutUs' className="auto1">
+      <li className="button-color"  >Calculator</li>   
+      </Link> 
+
+      <Link to='/AboutUs' className="auto1">
+      <li className="button-color"  >AboutUs</li>   
+      </Link> 
+      
+  
+      </Nav>
+     
+    </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  
     </div>
   );
 }
 
-export default Nav;
+export default Nav1;

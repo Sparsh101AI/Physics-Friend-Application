@@ -1,22 +1,71 @@
+  
 
-.Navbarcolor{
-
-
-    background-color: #f5c525
-    ;
-}
-
-.btn1{
-    color: white;
-    text-decoration: none;
-
+.nav-colortop{
+    background-color: rgb(255, 255, 255);
+    
 }
 
 
 
-
-
-.btn2{
+.button-color{
+   text-decoration: none;
+   border: none;
     color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: medium;
+   align-items: center;
+   justify-content: center;
+   margin: 0 45px;
+}
+
+
+.auto1{
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
+    font-size: xx-large;
+
+}
+
+
+.auto{
+    margin-left: auto;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.headertext{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #27206B;
+    text-align: right;
+}
+
+.navtex{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: left;
+    color: #27206B;
+    
+}
+
+.midbar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: left;
+    background-color: #CFCFCF;
+    
+}
+
+.nav-color1{
+    background-color: #F5c525;
 }

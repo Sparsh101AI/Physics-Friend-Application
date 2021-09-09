@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, "Roboto";
+  background-color: #f5c525;
 }
+
 .background {
   background-color: #f5c525;
 }
@@ -12,7 +14,8 @@
   background-color: #f5c525;
   margin: 2% 13%;
   color: white;
-  border: 4px solid #acacac;
+  border: 4px solid white;
+  box-shadow: 2px 2px #a1a1a1;
   border-radius: 3px;
 }
 .Header {
@@ -21,8 +24,10 @@
   font-weight: 300;
   font-size: 50px;
 }
-.Body {
-  text-shadow: #a1a1a1 1px 1px;
-  background-color: #f5c525;
-  padding: 2% 5%;
+.block1 {
+  float: left;
+}
+
+.block2 {
+  float: right;
 }

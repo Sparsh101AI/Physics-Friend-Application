@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 function AboutUs() {
   return (
     <Container className="background">
-      <Image src="Background3.0.jpg" fluid />
+      <Image src="logoM.png" fluid />
       <Card className="About">
         <h1 className="Header">About Us</h1>
         <p className="Body">

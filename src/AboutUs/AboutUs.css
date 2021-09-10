@@ -25,6 +25,7 @@
   background-color: #f1c83f !important;
   font-weight: 300 !important;
   padding-bottom: 5px !important;
+  
 }
 .text {
   font-family: Verdana !important;
@@ -37,4 +38,6 @@
   background-color: #f1c83f !important;
   font-weight: 300 !important;
   font-style: italic !important;
+  text-decoration-line: underline;
+
 }

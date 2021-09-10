@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   background-color: #f5c525 !important;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial;
+  font-family: Roboto, Verdana, Helvetica, Arial;
   color: white;
 }
 .box {

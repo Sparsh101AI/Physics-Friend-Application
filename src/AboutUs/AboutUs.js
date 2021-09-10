@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image";
 
 function AboutUs() {
   return (
+    <div>
     <Card className="box">
       <Card.Title className="title">About Us</Card.Title>
       <Card.Title className="title2">Our Mission:</Card.Title>
@@ -25,7 +26,12 @@ function AboutUs() {
         solving physics problems. So instead of waiting for a physics solver to
         be created we decided to make our own!
       </Card.Text>
+      
     </Card>
+
+    <br/>
+    <br/>
+    </div>
   );
 }
 

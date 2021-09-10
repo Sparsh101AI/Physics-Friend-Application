@@ -9,6 +9,9 @@ import {
 import HomePage from './HomePage/HomePage';
 import AboutUs from './AboutUs/AboutUs';
 import Nav from './Nav/Nav';
+import Calculator from './Calculator/Calculator';
+
+
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
             <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/AboutUs" component={AboutUs} />
+          <Route path="/Calculator" component={Calculator}/>
           </Switch>
 
 

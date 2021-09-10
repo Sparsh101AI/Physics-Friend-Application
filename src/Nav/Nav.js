@@ -31,7 +31,7 @@ function Nav1() {
                 <li className="button-color"> Home</li>
               </Link>
 
-              <Link to="/AboutUs" className="auto1">
+              <Link to="/Calculator" className="auto1">
                 <li className="button-color">Physics Calculator</li>
               </Link>
 

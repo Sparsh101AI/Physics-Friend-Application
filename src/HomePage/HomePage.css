@@ -29,4 +29,11 @@
   background-color: #5096f1 !important;
   font-weight: 300 !important;
   font-size: 17px !important;
+  margin-top: 2%;
+}
+.homeTitle2 {
+  font-weight: 300 !important;
+  background-color: #5096f1 !important;
+  font-size: 25px !important;
+  font-style: italic !important;
 }

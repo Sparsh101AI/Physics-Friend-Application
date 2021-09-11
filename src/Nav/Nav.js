@@ -28,15 +28,22 @@ function Nav1() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="auto">
               <Link to="/" className="auto1">
-                <li className="button-color"> Home</li>
+                <li className="button-color" id="homeButton">
+                  {" "}
+                  Home
+                </li>
               </Link>
 
               <Link to="/Calculator" className="auto1">
-                <li className="button-color">Physics Calculator</li>
+                <li className="button-color" id="calcButton">
+                  Physics Calculator
+                </li>
               </Link>
 
               <Link to="/AboutUs" className="auto1">
-                <li className="button-color">About Us</li>
+                <li className="button-color" id="aboutButton">
+                  About Us
+                </li>
               </Link>
             </Nav>
           </Navbar.Collapse>

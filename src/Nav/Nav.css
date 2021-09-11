@@ -9,19 +9,28 @@
   color: white;
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
   text-shadow: 1px 1px #a1a1a1;
   font-weight: 300;
   align-items: center;
   justify-content: center;
-  margin: 0 45px;
-  border-bottom: 2px solid rgb(255, 255, 255, 0);
+  margin: 20px 35px;
+  background-color: #f1c83f !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
   transition: ease-in 0.2s;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.123);
 }
-
-.button-color:hover {
-  border-bottom: 2px solid rgb(233, 233, 233);
+#homeButton:hover {
+  background-color: #5096f1 !important;
 }
-
+#calcButton:hover {
+  background-color: #e05151 !important;
+}
+#aboutButton:hover {
+  background-color: rgb(255, 167, 4) !important;
+}
 .auto1 {
   margin-left: auto;
   margin-right: auto;

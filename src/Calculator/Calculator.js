@@ -33,21 +33,7 @@ function Calculator() {
               such as velocity, distance, acceleration, and time.
             </Card.Text>
           </Card.Body>
-          <Link
-                to="/Kinematics"
-                className="auto1"
-                onClick={() =>
-                  setButtonState([
-                    "button-color",
-                    "pcButtonColor",
-                    "button-color",
-                  ])
-                }
-              >
-                <li className={ButtonState[1]} id="calcButton">
-                  Physics Calculator
-                </li>
-              </Link>
+        
         </Card>
 
         <Card className="cardg">

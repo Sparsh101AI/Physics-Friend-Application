@@ -16,8 +16,8 @@ function Calculator() {
       <br />
 
       <CardGroup>
+
         <Link className="linkcolor" to="/Kinematics">
-        
         <Card className="cardg" >
           <Card.Body id="kinematics">
             <Card.Title className="calcTitle" id="kinematics">
@@ -31,9 +31,9 @@ function Calculator() {
             </Card.Text>
           </Card.Body>
         </Card>
-        
-
         </Link>
+
+
         <Card className="cardg">
           <Card.Body id="dynamics">
             <Card.Title className="calcTitle" id="dynamics">
@@ -46,6 +46,10 @@ function Calculator() {
             </Card.Text>
           </Card.Body>
         </Card>
+        
+
+
+        
         <Card className="cardg">
           <Card.Body id="cM">
             <Card.Title className="calcTitle" id="cM">
@@ -57,6 +61,7 @@ function Calculator() {
             </Card.Text>
           </Card.Body>
         </Card>
+        
       </CardGroup>
 
       <br />

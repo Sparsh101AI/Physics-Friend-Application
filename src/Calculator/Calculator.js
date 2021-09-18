@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 function Calculator() {
-  const [ButtonState, setButtonState] = React.useState([
-    "homeButtonColor",
-    "button-color",
-    "button-color",
+  const [cardState, setCardState] = React.useState([
+    "cardg",
+    "cardg",
+    "cardg",
+    "hide",
+    "hide",
   ]);
   return (
     <div>
@@ -21,22 +23,26 @@ function Calculator() {
       <br />
 
       <CardGroup>
-        <Card className="cardg">
+        <Card
+          className={cardState[0]}
+          onClick={() =>
+            setCardState(["hide", "hide", "hide", "kinematicsCard", "1"])
+          }
+        >
           <Card.Body id="kinematics">
             <Card.Title className="calcTitle" id="kinematics">
               Kinematics
             </Card.Title>
-            
+
             <Card.Text className="calcText" id="kinematics">
               Solve common word problems and equations which pretain to
               kinematics. Problems which fall under kinematics include variables
               such as velocity, distance, acceleration, and time.
             </Card.Text>
           </Card.Body>
-        
         </Card>
 
-        <Card className="cardg">
+        <Card className={cardState[1]}>
           <Card.Body id="dynamics">
             <Card.Title className="calcTitle" id="dynamics">
               Dynamics
@@ -48,10 +54,21 @@ function Calculator() {
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card className="cardg">
+        <Card className={cardState[2]}>
           <Card.Body id="cM">
             <Card.Title className="calcTitle" id="cM">
               Circular Motion
+            </Card.Title>
+            <Card.Text className="calcText" id="cM">
+              <br />
+              Coming Soon...
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card className={cardState[3]}>
+          <Card.Body>
+            <Card.Title className="calcTitle" id="cM">
+              Kinematics Calculator
             </Card.Title>
             <Card.Text className="calcText" id="cM">
               <br />

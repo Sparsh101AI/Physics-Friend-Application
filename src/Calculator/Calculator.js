@@ -16,7 +16,9 @@ function Calculator() {
       <br />
 
       <CardGroup>
-        <Card className="cardg">
+        <Link className="linkcolor" to="/Kinematics">
+        
+        <Card className="cardg" >
           <Card.Body id="kinematics">
             <Card.Title className="calcTitle" id="kinematics">
               Kinematics
@@ -29,7 +31,9 @@ function Calculator() {
             </Card.Text>
           </Card.Body>
         </Card>
+        
 
+        </Link>
         <Card className="cardg">
           <Card.Body id="dynamics">
             <Card.Title className="calcTitle" id="dynamics">

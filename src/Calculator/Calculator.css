@@ -51,3 +51,7 @@
 .cardg:hover {
   bottom: 1rem;
 }
+
+.linkcolor{
+  text-decoration: none;
+}

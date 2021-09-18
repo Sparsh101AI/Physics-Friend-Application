@@ -19,11 +19,13 @@
 
 .cardg {
   text-shadow: 1px 1px #a1a1a1;
-  background-color: #f1c83f !important;
   border: 2px solid #e7e7e7 !important;
   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.123);
   margin: 1.5rem;
   border-radius: 4px !important;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  bottom: 0;
 }
 .calcTitle {
   font-size: 40px !important;
@@ -31,4 +33,21 @@
 }
 .calcText {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#kinematics {
+  background-color: #8072a0 !important;
+}
+#dynamics {
+  background-color: rgb(116, 124, 245) !important;
+}
+#cM {
+  background-color: rgb(133, 131, 131) !important;
+  color: rgb(66, 66, 66) !important;
+  text-shadow: 1px 1px rgb(179, 179, 179) !important;
+}
+.hide {
+  display: none !important;
+}
+.cardg:hover {
+  bottom: 3px;
 }

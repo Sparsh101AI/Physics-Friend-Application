@@ -15,34 +15,37 @@ function Calculator() {
 
       <CardGroup>
         <Card className="cardg">
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title className="calcTitle">Card title</Card.Title>
-            <Card.Text className="calcText">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+          <Card.Body id="kinematics">
+            <Card.Title className="calcTitle" id="kinematics">
+              Kinematics
+            </Card.Title>
+            <Card.Text className="calcText" id="kinematics">
+              Solve common word problems and equations which pretain to
+              kinematics. Problems which fall under kinematics include variables
+              such as velocity, distance, acceleration, and time.
             </Card.Text>
           </Card.Body>
         </Card>
         <Card className="cardg">
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title className="calcTitle">Card title</Card.Title>
-            <Card.Text className="calcText">
-              This card has supporting text below as a natural lead-in to
-              additional content.{" "}
+          <Card.Body id="dynamics">
+            <Card.Title className="calcTitle" id="dynamics">
+              Dynamics
+            </Card.Title>
+            <Card.Text className="calcText" id="dynamics">
+              Solve common word problems and equations which pretain to
+              dynamics. Problems which fall under dynamics include variables
+              such as force, mass, gravity, acceleration, and friction.
             </Card.Text>
           </Card.Body>
         </Card>
         <Card className="cardg">
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title className="calcTitle">Card title</Card.Title>
-            <Card.Text className="calcText">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+          <Card.Body id="cM">
+            <Card.Title className="calcTitle" id="cM">
+              Circular Motion
+            </Card.Title>
+            <Card.Text className="calcText" id="cM">
+              <br />
+              Coming Soon...
             </Card.Text>
           </Card.Body>
         </Card>

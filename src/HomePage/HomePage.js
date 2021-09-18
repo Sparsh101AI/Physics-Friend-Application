@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 
 function HomePage() {
   return (
+    <div>
     <Card className="homeBody">
       <Card.Title className="homeTitle">Welcome to Physics Friend</Card.Title>
       <Card.Title className="homeTitle2">
@@ -14,6 +15,9 @@ function HomePage() {
         provides and our solver will take care of the rest!
       </Card.Text>
     </Card>
+    <br/>
+    <br/>
+    </div>
   );
 }
 

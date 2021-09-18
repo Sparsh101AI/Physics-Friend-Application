@@ -12,7 +12,7 @@ function Kinematics() {
     <div>
     <div>
     <CardGroup>
-  <Card>
+  <Card className="cardg">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -21,11 +21,9 @@ function Kinematics() {
         additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
+    
+  </Card >
+  <Card className="cardg">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -34,11 +32,9 @@ function Kinematics() {
         content.{' '}
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    
   </Card>
-  <Card>
+  <Card className="cardg"> 
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -48,19 +44,16 @@ function Kinematics() {
         show that equal height action.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    
   </Card>
 </CardGroup>
     </div>
-<br/>
-<br/>
+
 
 
 <div>
 <CardGroup>
-  <Card>
+  <Card className="cardg">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -69,11 +62,9 @@ function Kinematics() {
         additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    
   </Card>
-  <Card>
+  <Card className="cardg">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -82,11 +73,9 @@ function Kinematics() {
         content.{' '}
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    
   </Card>
-  <Card>
+  <Card className="cardg">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -96,9 +85,7 @@ function Kinematics() {
         show that equal height action.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    
   </Card>
 </CardGroup>
 </div>

@@ -1,8 +1,15 @@
 import "./Calculator.css";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+import React from "react";
 
 function Calculator() {
+  const [ButtonState, setButtonState] = React.useState([
+    "homeButtonColor",
+    "button-color",
+    "button-color",
+  ]);
   return (
     <div>
       <br />
@@ -19,13 +26,30 @@ function Calculator() {
             <Card.Title className="calcTitle" id="kinematics">
               Kinematics
             </Card.Title>
+            
             <Card.Text className="calcText" id="kinematics">
               Solve common word problems and equations which pretain to
               kinematics. Problems which fall under kinematics include variables
               such as velocity, distance, acceleration, and time.
             </Card.Text>
           </Card.Body>
+          <Link
+                to="/Kinematics"
+                className="auto1"
+                onClick={() =>
+                  setButtonState([
+                    "button-color",
+                    "pcButtonColor",
+                    "button-color",
+                  ])
+                }
+              >
+                <li className={ButtonState[1]} id="calcButton">
+                  Physics Calculator
+                </li>
+              </Link>
         </Card>
+
         <Card className="cardg">
           <Card.Body id="dynamics">
             <Card.Title className="calcTitle" id="dynamics">

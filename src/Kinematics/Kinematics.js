@@ -89,6 +89,61 @@ function Kinematics() {
     if (acc_Vi === "") setAccAnswer(acc_Vf - acc_A * acc_T + " m/s");
     if (acc_T === "") setAccAnswer(Math.abs((acc_Vf - acc_Vi) / acc_A) + " s");
   };
+  //Distance 1 Variables
+  const [d1Answer, setD1Answer] = React.useState("Press Calculate!");
+  const [d1_D, setD1_D] = React.useState("");
+  const [d1_Vi, setD1_Vi] = React.useState("");
+  const [d1_T, setD1_T] = React.useState("");
+  const [d1_A, setD1_A] = React.useState("");
+  let changeD1_D = (event) => {
+    const newValue = event.target.value;
+    setD1_D(newValue);
+  };
+  let changeD1_Vi = (event) => {
+    const newValue = event.target.value;
+    setD1_Vi(newValue);
+  };
+  let changeD1_T = (event) => {
+    const newValue = event.target.value;
+    setD1_T(newValue);
+  };
+  let changeD1_A = (event) => {
+    const newValue = event.target.value;
+    setD1_A(newValue);
+  };
+  let changeD1_Answer = () => {
+    const d1_variables = [d1_D, d1_Vi, d1_T, d1_A];
+    let counter = 0;
+    for (var i = 0; i < d1_variables.length; i++)
+      if (d1_variables[i] === "") counter++;
+    if (counter > 1) {
+      setD1Answer("ERROR");
+      return;
+    }
+    if (
+      counter === 0 &&
+      parseInt(d1_D) === d1_Vi * d1_T + 0.5 * d1_A * d1_T * d1_T
+    ) {
+      setD1Answer("Equation is Correct");
+      return;
+    } else if (counter === 0) {
+      setD1Answer("Equation is Incorrect");
+      return;
+    }
+
+    if (d1_D === "")
+      setD1Answer(d1_Vi * d1_T + 0.5 * d1_A * d1_T * d1_T + " m");
+    if (d1_A === "")
+      setD1Answer(2 * ((d1_D - d1_Vi * d1_T) / (d1_T * d1_T)) + " m/s²");
+    if (d1_Vi === "")
+      setD1Answer((d1_D - 0.5 * d1_A * d1_T * d1_T) / d1_T + " m/s");
+    if (d1_T === "")
+      setD1Answer(
+        Math.abs(
+          (-1 * d1_Vi + Math.sqrt(d1_Vi * d1_Vi + 2 * d1_A * d1_D)) / d1_A
+        ) + " s"
+      );
+  };
   return (
     <div>
       <div>
@@ -150,15 +205,30 @@ function Kinematics() {
           <Card className="cardg">
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>
+                <em>
+                  d = V <sub>i</sub> t + (1/2) a t <sup>2</sup>
+                </em>
+              </Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                Leave a blank for the variable you want to solve for.
               </Card.Text>
+              <h6>Distance (m)</h6>
+              <input onChange={changeD1_D}></input>
+              <h6>Velocity Initial (m/s)</h6>
+              <input onChange={changeD1_Vi}></input>
+              <h6>Time (s)</h6>
+              <input onChange={changeD1_T}></input>
+              <h6>
+                Acceleration (m/s<sup>2</sup>)
+              </h6>
+              <input onChange={changeD1_A}></input>
+              <br />
+              <button onClick={changeD1_Answer}>Calculate</button>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <h5>Answer:</h5>
+              <h5>{d1Answer}</h5>
             </Card.Footer>
           </Card>
         </CardGroup>

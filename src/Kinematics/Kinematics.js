@@ -195,6 +195,54 @@ function Kinematics() {
         Math.abs((d2_D * 2) / (parseInt(d2_Vf) + parseInt(d2_Vi))) + " s"
       );
   };
+  //Velocity Final Variables
+  const [vAnswer, setVAnswer] = React.useState("Press Calculate!");
+  const [v_Vf, setV_Vf] = React.useState("");
+  const [v_Vi, setV_Vi] = React.useState("");
+  const [v_A, setV_A] = React.useState("");
+  const [v_D, setV_D] = React.useState("");
+  let changeV_Vf = (event) => {
+    const newValue = event.target.value;
+    setV_Vf(newValue);
+  };
+  let changeV_Vi = (event) => {
+    const newValue = event.target.value;
+    setV_Vi(newValue);
+  };
+  let changeV_A = (event) => {
+    const newValue = event.target.value;
+    setV_A(newValue);
+  };
+  let changeV_D = (event) => {
+    const newValue = event.target.value;
+    setV_D(newValue);
+  };
+  let changeV_Answer = () => {
+    const v_variables = [v_Vf, v_Vi, v_A, v_D];
+    let counter = 0;
+    for (var i = 0; i < v_variables.length; i++)
+      if (v_variables[i] === "") counter++;
+    if (counter > 1) {
+      setVAnswer("ERROR");
+      return;
+    }
+    console.log();
+    if (counter === 0 && v_Vf * v_Vf === v_Vi * v_Vi + 2 * v_A * v_D) {
+      setVAnswer("Equation is Correct");
+      return;
+    } else if (counter === 0) {
+      setVAnswer("Equation is Incorrect");
+      return;
+    }
+
+    if (v_Vf === "")
+      setVAnswer(Math.sqrt(v_Vi * v_Vi + 2 * v_A * v_D) + " m/s");
+    if (v_Vi === "")
+      setVAnswer(Math.sqrt(v_Vf * v_Vf - 2 * v_A * v_D) + " m/s");
+    if (v_A === "")
+      setVAnswer((v_Vf * v_Vf - v_Vi * v_Vi) / (2 * v_D) + " m/s²");
+    if (v_D === "") setVAnswer((v_Vf * v_Vf - v_Vi * v_Vi) / (2 * v_A) + " m");
+  };
   return (
     <div>
       <div>
@@ -317,14 +365,31 @@ function Kinematics() {
           <Card className="cardg">
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>
+                <em>
+                  V <sub>f</sub> <sup>2</sup> = V <sub>i</sub> <sup>2</sup> + 2
+                  a d
+                </em>
+              </Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
+                Leave a blank for the variable you want to solve for.
               </Card.Text>
+              <h6>Velocity Final (m/s)</h6>
+              <input onChange={changeV_Vf}></input>
+              <h6>Velocity Initial (m/s)</h6>
+              <input onChange={changeV_Vi}></input>
+              <h6>
+                Acceleration (m/s<sup>2</sup>)
+              </h6>
+              <input onChange={changeV_A}></input>
+              <h6>Distance (m)</h6>
+              <input onChange={changeV_D}></input>
+              <br />
+              <button onClick={changeV_Answer}>Calculate</button>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <h5>Answer:</h5>
+              <h5>{vAnswer}</h5>
             </Card.Footer>
           </Card>
           <Card className="cardg">

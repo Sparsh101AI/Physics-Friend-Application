@@ -144,6 +144,57 @@ function Kinematics() {
         ) + " s"
       );
   };
+  // Distance 2 Variables
+  const [d2Answer, setD2Answer] = React.useState("Press Calculate!");
+  const [d2_D, setD2_D] = React.useState("");
+  const [d2_Vf, setD2_Vf] = React.useState("");
+  const [d2_Vi, setD2_Vi] = React.useState("");
+  const [d2_T, setD2_T] = React.useState("");
+  let changeD2_D = (event) => {
+    const newValue = event.target.value;
+    setD2_D(newValue);
+  };
+  let changeD2_Vf = (event) => {
+    const newValue = event.target.value;
+    setD2_Vf(newValue);
+  };
+  let changeD2_Vi = (event) => {
+    const newValue = event.target.value;
+    setD2_Vi(newValue);
+  };
+  let changeD2_T = (event) => {
+    const newValue = event.target.value;
+    setD2_T(newValue);
+  };
+  let changeD2_Answer = () => {
+    const d2_variables = [d2_D, d2_Vf, d2_Vi, d2_T];
+    let counter = 0;
+    for (var i = 0; i < d2_variables.length; i++)
+      if (d2_variables[i] === "") counter++;
+    if (counter > 1) {
+      setD2Answer("ERROR");
+      return;
+    }
+    if (
+      counter === 0 &&
+      parseInt(d2_D) === (parseInt(d2_Vf) + parseInt(d2_Vi)) * 0.5 * d2_T
+    ) {
+      setD2Answer("Equation is Correct");
+      return;
+    } else if (counter === 0) {
+      setD2Answer("Equation is Incorrect");
+      return;
+    }
+
+    if (d2_D === "")
+      setD2Answer((parseInt(d2_Vf) + parseInt(d2_Vi)) * 0.5 * d2_T + " m");
+    if (d2_Vf === "") setD2Answer((d2_D / d2_T) * 2 - d2_Vi + " m/s");
+    if (d2_Vi === "") setD2Answer((d2_D / d2_T) * 2 - d2_Vf + " m/s");
+    if (d2_T === "")
+      setD2Answer(
+        Math.abs((d2_D * 2) / (parseInt(d2_Vf) + parseInt(d2_Vi))) + " s"
+      );
+  };
   return (
     <div>
       <div>
@@ -239,15 +290,28 @@ function Kinematics() {
           <Card className="cardg">
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>
+                <em>
+                  d = ( ( V <sub>f</sub> + V <sub>i</sub> ) / 2 ) t
+                </em>
+              </Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Leave a blank for the variable you want to solve for.
               </Card.Text>
+              <h6>Distance (m)</h6>
+              <input onChange={changeD2_D}></input>
+              <h6>Velocity Final (m/s)</h6>
+              <input onChange={changeD2_Vf}></input>
+              <h6>Velocity Initial (m/s)</h6>
+              <input onChange={changeD2_Vi}></input>
+              <h6>Time (s)</h6>
+              <input onChange={changeD2_T}></input>
+              <br />
+              <button onClick={changeD2_Answer}>Calculate</button>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <h5>Answer:</h5>
+              <h5>{d2Answer}</h5>
             </Card.Footer>
           </Card>
           <Card className="cardg">

@@ -11,7 +11,7 @@ import AboutUs from './AboutUs/AboutUs';
 import Nav from './Nav/Nav';
 import Calculator from './Calculator/Calculator';
 import Kinematics from './Kinematics/Kinematics';
-
+import Dynamics from './Dynamics/Dynamics';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           <Route path="/AboutUs" component={AboutUs} />
           <Route path="/Calculator" component={Calculator}/>
           <Route path="/Kinematics" component={Kinematics}/>
+          <Route path="/Dynamics" component={Dynamics}/>
           </Switch>
 
 

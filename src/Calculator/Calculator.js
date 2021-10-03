@@ -32,7 +32,7 @@ function Calculator() {
             </Card.Body>
           </Card>
         </Link>
-        <Link className="linkcolor" to="/Kinematics">
+        <Link className="linkcolor" to="/Dynamics">
           <Card className="cardg">
             <Card.Body id="dynamics">
               <Card.Title className="calcTitle" id="dynamics">

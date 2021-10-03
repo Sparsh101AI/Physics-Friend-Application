@@ -248,7 +248,6 @@ function Kinematics() {
       <div>
         <CardGroup>
           <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>
                 <em>
@@ -273,7 +272,6 @@ function Kinematics() {
             </Card.Footer>
           </Card>
           <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>
                 <em>
@@ -302,7 +300,6 @@ function Kinematics() {
             </Card.Footer>
           </Card>
           <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>
                 <em>
@@ -336,7 +333,6 @@ function Kinematics() {
       <div>
         <CardGroup>
           <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>
                 <em>
@@ -363,7 +359,6 @@ function Kinematics() {
             </Card.Footer>
           </Card>
           <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>
                 <em>
@@ -392,20 +387,7 @@ function Kinematics() {
               <h5>{vAnswer}</h5>
             </Card.Footer>
           </Card>
-          <Card className="cardg">
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
+          
         </CardGroup>
       </div>
     </div>

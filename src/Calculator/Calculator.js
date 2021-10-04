@@ -48,7 +48,7 @@ function Calculator() {
             </Card.Body>
           </Card>
         </Link>
-        <Link className="linkcolor" to="/Kinematics">
+        <Link className="linkcolor" to="/Calculator">
           <Card className="cardg">
             <Card.Body id="cM">
               <Card.Title className="calcTitle" id="cM">

@@ -8,7 +8,6 @@ function Calculator() {
   return (
     <div>
       <br />
-<div></div>
       <div>
         <p className="header1">Select A Topic!</p>
       </div>

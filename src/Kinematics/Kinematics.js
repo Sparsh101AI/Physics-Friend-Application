@@ -245,23 +245,23 @@ function Kinematics() {
       <div>
         <CardGroup>
           <Card className="kcard">
-            <Card.Body id="k1">
-              <Card.Title id="k1">
-                <h4 id="k1">
-                  <em id="k1">
-                    V <sub id="k1">ave</sub> = d / t
+            <Card.Body id="k2">
+              <Card.Title id="k2">
+                <h4 id="k2">
+                  <em id="k2">
+                    V <sub id="k2">ave</sub> = d / t
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text id="k1">
+              <Card.Text id="k2">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6 id="k1">Average Velocity (m/s)</h6>
-              <input id="k1" className="inp" onChange={changeVDT_V}></input>
-              <h6 id="k1">Distance (m)</h6>
-              <input id="k1" className="inp" onChange={changeVDT_D}></input>
-              <h6 id="k1">Time (s)</h6>
-              <input id="k1" className="inp" onChange={changeVDT_T}></input>
+              <h6 id="k2">Average Velocity (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeVDT_V}></input>
+              <h6 id="k2">Distance (m)</h6>
+              <input id="k2" className="inp" onChange={changeVDT_D}></input>
+              <h6 id="k2">Time (s)</h6>
+              <input id="k2" className="inp" onChange={changeVDT_T}></input>
               <br />
               <button className="calcbtn" onClick={changeVDT_Answer}>
                 Calculate
@@ -305,28 +305,28 @@ function Kinematics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body id="k3">
+            <Card.Body id="k2">
               <Card.Title>
-                <h4 id="k3">
-                  <em id="k3">
-                    d = V <sub id="k3">i</sub> t + (1/2) a t{" "}
-                    <sup id="k3">2</sup>
+                <h4 id="k2">
+                  <em id="k2">
+                    d = V <sub id="k2">i</sub> t + (1/2) a t{" "}
+                    <sup id="k2">2</sup>
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text id="k3">
+              <Card.Text id="k2">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6 id="k3">Distance (m)</h6>
-              <input id="k3" className="inp" onChange={changeD1_D}></input>
-              <h6 id="k3">Velocity Initial (m/s)</h6>
-              <input id="k3" className="inp" onChange={changeD1_Vi}></input>
-              <h6 id="k3">Time (s)</h6>
-              <input id="k3" className="inp" onChange={changeD1_T}></input>
-              <h6 id="k3">
-                Acceleration (m/s<sup id="k3">2</sup>)
+              <h6 id="k2">Distance (m)</h6>
+              <input id="k2" className="inp" onChange={changeD1_D}></input>
+              <h6 id="k2">Velocity Initial (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeD1_Vi}></input>
+              <h6 id="k2">Time (s)</h6>
+              <input id="k2" className="inp" onChange={changeD1_T}></input>
+              <h6 id="k2">
+                Acceleration (m/s<sup id="k2">2</sup>)
               </h6>
-              <input id="k3" className="inp" onChange={changeD1_A}></input>
+              <input id="k2" className="inp" onChange={changeD1_A}></input>
               <br />
               <button className="calcbtn" onClick={changeD1_Answer}>
                 Calculate
@@ -343,26 +343,26 @@ function Kinematics() {
       <div>
         <CardGroup>
           <Card className="kcard">
-            <Card.Body id="k4">
+            <Card.Body id="k2">
               <Card.Title>
-                <h4 id="k4">
-                  <em id="k4">
-                    d = ( ( V <sub id="k4">f</sub> + V <sub id="k4">i</sub> ) /
+                <h4 id="k2">
+                  <em id="k2">
+                    d = ( ( V <sub id="k2">f</sub> + V <sub id="k2">i</sub> ) /
                     2 ) t
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text id="k4">
+              <Card.Text id="k2">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6 id="k4">Distance (m)</h6>
-              <input id="k4" className="inp" onChange={changeD2_D}></input>
-              <h6 id="k4">Velocity Final (m/s)</h6>
-              <input id="k4" className="inp" onChange={changeD2_Vf}></input>
-              <h6 id="k4">Velocity Initial (m/s)</h6>
-              <input id="k4" className="inp" onChange={changeD2_Vi}></input>
-              <h6 id="k4">Time (s)</h6>
-              <input id="k4" className="inp" onChange={changeD2_T}></input>
+              <h6 id="k2">Distance (m)</h6>
+              <input id="k2" className="inp" onChange={changeD2_D}></input>
+              <h6 id="k2">Velocity Final (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeD2_Vf}></input>
+              <h6 id="k2">Velocity Initial (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeD2_Vi}></input>
+              <h6 id="k2">Time (s)</h6>
+              <input id="k2" className="inp" onChange={changeD2_T}></input>
               <br />
               <button className="calcbtn" onClick={changeD2_Answer}>
                 Calculate
@@ -374,28 +374,28 @@ function Kinematics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body id="k5">
+            <Card.Body id="k2">
               <Card.Title>
-                <h4 id="k5">
-                  <em id="k5">
-                    V <sub id="k5">f</sub> <sup id="k5">2</sup> = V{" "}
-                    <sub id="k5">i</sub> <sup id="k5">2</sup> + 2 a d
+                <h4 id="k2">
+                  <em id="k2">
+                    V <sub id="k2">f</sub> <sup id="k2">2</sup> = V{" "}
+                    <sub id="k2">i</sub> <sup id="k2">2</sup> + 2 a d
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text id="k5">
+              <Card.Text id="k2">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6 id="k5">Velocity Final (m/s)</h6>
-              <input id="k5" className="inp" onChange={changeV_Vf}></input>
-              <h6 id="k5">Velocity Initial (m/s)</h6>
-              <input id="k5" className="inp" onChange={changeV_Vi}></input>
-              <h6 id="k5">
-                Acceleration (m/s<sup id="k5">2</sup>)
+              <h6 id="k2">Velocity Final (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeV_Vf}></input>
+              <h6 id="k2">Velocity Initial (m/s)</h6>
+              <input id="k2" className="inp" onChange={changeV_Vi}></input>
+              <h6 id="k2">
+                Acceleration (m/s<sup id="k2">2</sup>)
               </h6>
-              <input id="k5" className="inp" onChange={changeV_A}></input>
-              <h6 id="k5">Distance (m)</h6>
-              <input id="k5" className="inp" onChange={changeV_D}></input>
+              <input id="k2" className="inp" onChange={changeV_A}></input>
+              <h6 id="k2">Distance (m)</h6>
+              <input id="k2" className="inp" onChange={changeV_D}></input>
               <br />
               <button className="calcbtn" onClick={changeV_Answer}>
                 Calculate

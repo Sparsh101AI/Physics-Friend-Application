@@ -35,12 +35,12 @@
 /*rgb(253, 55, 55)*/
 
 .foot {
-  background-color: rgb(180, 180, 180) !important;
+  background-color: rgb(201, 201, 201) !important;
   border-top: 2px solid #e7e7e7 !important;
 }
 
 .foot-text {
-  background-color: rgb(180, 180, 180) !important;
+  background-color: rgb(201, 201, 201) !important;
   color: rgb(34, 34, 34);
   text-shadow: none !important;
 }

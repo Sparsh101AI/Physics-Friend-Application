@@ -261,12 +261,22 @@ function Kinematics() {
                 id="k2"
                 className="inp"
                 onChange={changeVDT_V}
-                type="tel"
+                type="number"
               ></input>
               <h6 id="k2">Distance (m)</h6>
-              <input id="k2" className="inp" onChange={changeVDT_D}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeVDT_D}
+                type="number"
+              ></input>
               <h6 id="k2">Time (s)</h6>
-              <input id="k2" className="inp" onChange={changeVDT_T}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeVDT_T}
+                type="number"
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeVDT_Answer}>
                 Calculate
@@ -292,15 +302,39 @@ function Kinematics() {
               <h6 id="k2">
                 Acceleration (m/s<sup id="k2">2</sup>)
               </h6>
-              <input id="k2" className="inp" onChange={changeACC_A}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeACC_A}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Final (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeACC_Vf}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeACC_Vf}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Initial</h6>
-              <input id="k2" className="inp" onChange={changeACC_Vi}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeACC_Vi}
+                type="number"
+              ></input>
               <h6 id="k2">Time (s)</h6>
-              <input id="k2" className="inp" onChange={changeACC_T}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeACC_T}
+                type="number"
+              ></input>
               <br />
-              <button className="calcbtn" onClick={changeACC_Answer}>
+              <button
+                className="calcbtn"
+                onClick={changeACC_Answer}
+                type="number"
+              >
                 Cacluate
               </button>
             </Card.Body>
@@ -323,17 +357,41 @@ function Kinematics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="k2">Distance (m)</h6>
-              <input id="k2" className="inp" onChange={changeD1_D}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD1_D}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Initial (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeD1_Vi}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD1_Vi}
+                type="number"
+              ></input>
               <h6 id="k2">Time (s)</h6>
-              <input id="k2" className="inp" onChange={changeD1_T}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD1_T}
+                type="number"
+              ></input>
               <h6 id="k2">
                 Acceleration (m/s<sup id="k2">2</sup>)
               </h6>
-              <input id="k2" className="inp" onChange={changeD1_A}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD1_A}
+                type="number"
+              ></input>
               <br />
-              <button className="calcbtn" onClick={changeD1_Answer}>
+              <button
+                className="calcbtn"
+                onClick={changeD1_Answer}
+                type="number"
+              >
                 Calculate
               </button>
             </Card.Body>
@@ -361,15 +419,39 @@ function Kinematics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="k2">Distance (m)</h6>
-              <input id="k2" className="inp" onChange={changeD2_D}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD2_D}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Final (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeD2_Vf}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD2_Vf}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Initial (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeD2_Vi}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD2_Vi}
+                type="number"
+              ></input>
               <h6 id="k2">Time (s)</h6>
-              <input id="k2" className="inp" onChange={changeD2_T}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeD2_T}
+                type="number"
+              ></input>
               <br />
-              <button className="calcbtn" onClick={changeD2_Answer}>
+              <button
+                className="calcbtn"
+                onClick={changeD2_Answer}
+                type="number"
+              >
                 Calculate
               </button>
             </Card.Body>
@@ -392,17 +474,41 @@ function Kinematics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="k2">Velocity Final (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeV_Vf}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeV_Vf}
+                type="number"
+              ></input>
               <h6 id="k2">Velocity Initial (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeV_Vi}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeV_Vi}
+                type="number"
+              ></input>
               <h6 id="k2">
                 Acceleration (m/s<sup id="k2">2</sup>)
               </h6>
-              <input id="k2" className="inp" onChange={changeV_A}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeV_A}
+                type="number"
+              ></input>
               <h6 id="k2">Distance (m)</h6>
-              <input id="k2" className="inp" onChange={changeV_D}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeV_D}
+                type="number"
+              ></input>
               <br />
-              <button className="calcbtn" onClick={changeV_Answer}>
+              <button
+                className="calcbtn"
+                onClick={changeV_Answer}
+                type="number"
+              >
                 Calculate
               </button>
             </Card.Body>

@@ -257,7 +257,12 @@ function Kinematics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="k2">Average Velocity (m/s)</h6>
-              <input id="k2" className="inp" onChange={changeVDT_V}></input>
+              <input
+                id="k2"
+                className="inp"
+                onChange={changeVDT_V}
+                type="number"
+              ></input>
               <h6 id="k2">Distance (m)</h6>
               <input id="k2" className="inp" onChange={changeVDT_D}></input>
               <h6 id="k2">Time (s)</h6>

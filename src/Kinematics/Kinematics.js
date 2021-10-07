@@ -261,7 +261,7 @@ function Kinematics() {
                 id="k2"
                 className="inp"
                 onChange={changeVDT_V}
-                type="number"
+                type="tel"
               ></input>
               <h6 id="k2">Distance (m)</h6>
               <input id="k2" className="inp" onChange={changeVDT_D}></input>

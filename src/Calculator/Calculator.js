@@ -22,9 +22,9 @@ function Calculator() {
                 Kinematics
               </Card.Title>
               <Card.Text className="calcText" id="kinematics">
-                Solve common word problems and equations which pretain to
-                kinematics. Problems which fall under kinematics include
-                variables such as velocity, distance, acceleration, and time.
+                Solve equations which pretain to kinematics. Problems which fall
+                under kinematics include variables such as velocity, distance,
+                acceleration, and time.
                 <br />
                 <br />
               </Card.Text>
@@ -38,9 +38,9 @@ function Calculator() {
                 Dynamics
               </Card.Title>
               <Card.Text className="calcText" id="dynamics">
-                Solve common word problems and equations which pretain to
-                dynamics. Problems which fall under dynamics include variables
-                such as force, mass, gravity, acceleration, and friction.
+                Solve equations which pretain to dynamics. Problems which fall
+                under dynamics include variables such as force, mass, gravity,
+                acceleration, and friction.
                 <br />
                 <br />
               </Card.Text>

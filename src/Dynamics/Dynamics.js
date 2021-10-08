@@ -279,13 +279,28 @@ function Dynamics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="d1">Net Force (N)</h6>
-              <input id="d1" className="inp" onChange={changeFMA_F}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMA_F}
+              ></input>
               <h6 id="d1">Mass (kg)</h6>
-              <input id="d1" className="inp" onChange={changeFMA_M}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMA_M}
+              ></input>
               <h6 id="d1">
                 Acceleration (m/s <sup id="d1">2</sup>)
               </h6>
-              <input id="d1" className="inp" onChange={changeFMA_A}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMA_A}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeFMA_Answer}>
                 Calculate
@@ -309,13 +324,28 @@ function Dynamics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="d1">Force Gravity (N)</h6>
-              <input id="d1" className="inp" onChange={changeFMG_F}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMG_F}
+              ></input>
               <h6 id="d1">Mass (kg)</h6>
-              <input id="d1" className="inp" onChange={changeFMG_M}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMG_M}
+              ></input>
               <h6 id="d1">
                 Acceleration due to Gravity (m/s<sup id="d1">2</sup>)
               </h6>
-              <input id="d1" className="inp" onChange={changeFMG_G}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFMG_G}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeFMG_Answer}>
                 Cacluate
@@ -340,11 +370,26 @@ function Dynamics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="d1">Force of Static Friction (N)</h6>
-              <input id="d1" className="inp" onChange={changeFUS_F}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUS_F}
+              ></input>
               <h6 id="d1">Static Friction Coefficient</h6>
-              <input id="d1" className="inp" onChange={changeFUS_Us}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUS_Us}
+              ></input>
               <h6 id="d1">Normal Force (N)</h6>
-              <input id="d1" className="inp" onChange={changeFUS_Fn}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUS_Fn}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeFUS_Answer}>
                 Cacluate
@@ -374,11 +419,26 @@ function Dynamics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="d1">Force of Friction Kinetic (N)</h6>
-              <input id="d1" className="inp" onChange={changeFUK_F}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUK_F}
+              ></input>
               <h6 id="d1">Kinetic Friction Coefficient</h6>
-              <input id="d1" className="inp" onChange={changeFUK_Uk}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUK_Uk}
+              ></input>
               <h6 id="d1">Normal Force</h6>
-              <input id="d1" className="inp" onChange={changeFUK_Fn}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFUK_Fn}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeFUK_Answer}>
                 Calculate
@@ -403,18 +463,43 @@ function Dynamics() {
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
               <h6 id="d1">Force Gravity (N)</h6>
-              <input id="d1" className="inp" onChange={changeFG_F}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFG_F}
+              ></input>
               <h6 id="d1">
                 Gravitational Constant (N m<sup id="d1">2</sup> / kg
                 <sup id="d1">2</sup>)
               </h6>
-              <input id="d1" className="inp" onChange={changeFG_G}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFG_G}
+              ></input>
               <h6 id="d1">Mass One (kg)</h6>
-              <input id="d1" className="inp" onChange={changeFG_M1}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFG_M1}
+              ></input>
               <h6 id="d1">Mass Two (kg)</h6>
-              <input id="d1" className="inp" onChange={changeFG_M2}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFG_M2}
+              ></input>
               <h6 id="d1">Radius (m)</h6>
-              <input id="d1" className="inp" onChange={changeFG_R}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeFG_R}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeFG_Answer}>
                 Calculate
@@ -441,16 +526,36 @@ function Dynamics() {
               <h6 id="d1">
                 Gravity (m/s<sup id="d1">2</sup>)
               </h6>
-              <input id="d1" className="inp" onChange={changeG1_Gra}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeG1_Gra}
+              ></input>
               <h6 id="d1">
                 Gravitational Constant (N m<sup id="d1">2</sup> / kg
                 <sup id="d1">2</sup>)
               </h6>
-              <input id="d1" className="inp" onChange={changeG1_G}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeG1_G}
+              ></input>
               <h6 id="d1">Mass Source (kg)</h6>
-              <input id="d1" className="inp" onChange={changeG1_M}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeG1_M}
+              ></input>
               <h6 id="d1">Radius (m)</h6>
-              <input id="d1" className="inp" onChange={changeG1_R}></input>
+              <input
+                id="d1"
+                className="inp"
+                type="number"
+                onChange={changeG1_R}
+              ></input>
               <br />
               <button className="calcbtn" onClick={changeG1_Answer}>
                 Calculate

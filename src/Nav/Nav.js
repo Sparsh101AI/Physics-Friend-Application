@@ -22,13 +22,24 @@ function Nav1() {
       >
         <Container>
           <Navbar.Brand>
-            <img
-              alt=""
-              src="logoM.png"
-              width="170"
-              height="70"
-              className="d-inline-block align-top"
-            />{" "}
+            <Link
+              to="/"
+              onClick={() =>
+                setButtonState([
+                  "homeButtonColor",
+                  "button-color",
+                  "button-color",
+                ])
+              }
+            >
+              <img
+                alt=""
+                src="logoM.png"
+                width="170"
+                height="70"
+                className="d-inline-block align-top"
+              />{" "}
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

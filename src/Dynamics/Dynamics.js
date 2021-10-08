@@ -9,25 +9,25 @@ function Dynamics() {
       <div>
         <CardGroup>
           <Card className="kcard">
-            <Card.Body>
+            <Card.Body id="d1">
               <Card.Title>
-                <h4>
-                  <em>
-                    F <sub>net</sub> = m a
+                <h4 id="d1">
+                  <em id="d1">
+                    F <sub id="d1">net</sub> = m a
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>Net Force (N)</h6>
-              <input className="inp"></input>
-              <h6>Mass (kg)</h6>
-              <input className="inp"></input>
-              <h6>
-                Acceleration (m/s <sup>2</sup>)
+              <h6 id="d1">Net Force (N)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Mass (kg)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">
+                Acceleration (m/s <sup id="d1">2</sup>)
               </h6>
-              <input className="inp"></input>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Calculate</button>
             </Card.Body>
@@ -37,25 +37,25 @@ function Dynamics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body>
-              <Card.Title>
-                <h4>
-                  <em>
-                    F <sub>g</sub> = m g
+            <Card.Body id="d1">
+              <Card.Title id="d1">
+                <h4 id="d1">
+                  <em id="d1">
+                    F <sub id="d1">g</sub> = m g
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>Force Gravity (N)</h6>
-              <input className="inp"></input>
-              <h6>Mass (kg)</h6>
-              <input className="inp"></input>
-              <h6>
-                Acceleration due to Gravity (m/s<sup>2</sup>)
+              <h6 id="d1">Force Gravity (N)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Mass (kg)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">
+                Acceleration due to Gravity (m/s<sup id="d1">2</sup>)
               </h6>
-              <input className="inp"></input>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Cacluate</button>
             </Card.Body>
@@ -65,23 +65,24 @@ function Dynamics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body>
+            <Card.Body id="d1">
               <Card.Title>
-                <h4>
-                  <em>
-                    F <sub>f static</sub> = μ <sub>s</sub> F <sub>N</sub>
+                <h4 id="d1">
+                  <em id="d1">
+                    F <sub id="d1">f static</sub> = μ <sub id="d1">s</sub> F{" "}
+                    <sub id="d1">N</sub>
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>Force of Static Friction (N)</h6>
-              <input className="inp"></input>
-              <h6>Static Friction Coefficient</h6>
-              <input className="inp"></input>
-              <h6>Normal Force (N)</h6>
-              <input className="inp"></input>
+              <h6 id="d1">Force of Static Friction (N)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Static Friction Coefficient</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Normal Force (N)</h6>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Cacluate</button>
             </Card.Body>
@@ -95,24 +96,25 @@ function Dynamics() {
       <div>
         <CardGroup>
           <Card className="kcard">
-            <Card.Body>
+            <Card.Body id="d1">
               <Card.Title>
                 {" "}
-                <h4>
-                  <em>
-                    F <sub>f kinetic</sub> = μ <sub>k</sub> F <sub>N</sub>
+                <h4 id="d1">
+                  <em id="d1">
+                    F <sub id="d1">f kinetic</sub> = μ <sub id="d1">k</sub> F{" "}
+                    <sub id="d1">N</sub>
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>Force of Friction Kinetic (N)</h6>
-              <input className="inp"></input>
-              <h6>Kinetic Friction Coefficient</h6>
-              <input className="inp"></input>
-              <h6>Normal Force</h6>
-              <input className="inp"></input>
+              <h6 id="d1">Force of Friction Kinetic (N)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Kinetic Friction Coefficient</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Normal Force</h6>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Calculate</button>
             </Card.Body>
@@ -122,30 +124,31 @@ function Dynamics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body>
+            <Card.Body id="d1">
               <Card.Title>
-                <h4>
-                  <em>
-                    F <sub>g</sub> = (G m <sub>1</sub> m <sub>2</sub> ) / (r{" "}
-                    <sup>2</sup>)
+                <h4 id="d1">
+                  <em id="d1">
+                    F <sub id="d1">g</sub> = (G m <sub id="d1">1</sub> m{" "}
+                    <sub id="d1">2</sub> ) / (r <sup id="d1">2</sup>)
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>Force Gravity (N)</h6>
-              <input className="inp"></input>
-              <h6>
-                Gravitational Constant (N m<sup>2</sup> / kg<sup>2</sup>)
+              <h6 id="d1">Force Gravity (N)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">
+                Gravitational Constant (N m<sup id="d1">2</sup> / kg
+                <sup id="d1">2</sup>)
               </h6>
-              <input className="inp"></input>
-              <h6>Mass One (kg)</h6>
-              <input className="inp"></input>
-              <h6>Mass Two (kg)</h6>
-              <input className="inp"></input>
-              <h6>Radius (m)</h6>
-              <input className="inp"></input>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Mass One (kg)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Mass Two (kg)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Radius (m)</h6>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Calculate</button>
             </Card.Body>
@@ -155,29 +158,31 @@ function Dynamics() {
             </Card.Footer>
           </Card>
           <Card className="kcard">
-            <Card.Body>
+            <Card.Body id="d1">
               <Card.Title>
-                <h4>
-                  <em>
-                    g = (G m <sub>source</sub> ) / (r <sup>2</sup>)
+                <h4 id="d1">
+                  <em id="d1">
+                    g = (G m <sub id="d1">source</sub> ) / (r{" "}
+                    <sup id="d1">2</sup>)
                   </em>
                 </h4>
               </Card.Title>
-              <Card.Text>
+              <Card.Text id="d1">
                 Leave a blank for the variable you want to solve for.
               </Card.Text>
-              <h6>
-                Gravity (m/s<sup>2</sup>)
+              <h6 id="d1">
+                Gravity (m/s<sup id="d1">2</sup>)
               </h6>
-              <input className="inp"></input>
-              <h6>
-                Gravitational Constant (N m<sup>2</sup> / kg<sup>2</sup>)
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">
+                Gravitational Constant (N m<sup id="d1">2</sup> / kg
+                <sup id="d1">2</sup>)
               </h6>
-              <input className="inp"></input>
-              <h6>Mass Source (kg)</h6>
-              <input className="inp"></input>
-              <h6>Radius (m)</h6>
-              <input className="inp"></input>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Mass Source (kg)</h6>
+              <input id="d1" className="inp"></input>
+              <h6 id="d1">Radius (m)</h6>
+              <input id="d1" className="inp"></input>
               <br />
               <button className="calcbtn">Calculate</button>
             </Card.Body>

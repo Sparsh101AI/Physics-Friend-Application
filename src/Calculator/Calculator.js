@@ -15,8 +15,8 @@ function Calculator() {
       <br />
 
       <CardGroup>
-        <Link className="linkcolor" to="/Kinematics">
-          <Card className="cardg">
+        <Card className="cardg">
+          <Link to="/Kinematics" className="link1">
             <Card.Body id="kinematics">
               <Card.Title className="calcTitle" id="kinematics">
                 Kinematics
@@ -26,13 +26,12 @@ function Calculator() {
                 under kinematics include variables such as velocity, distance,
                 acceleration, and time.
                 <br />
-                <br />
               </Card.Text>
             </Card.Body>
-          </Card>
-        </Link>
-        <Link className="linkcolor" to="/Dynamics">
-          <Card className="cardg">
+          </Link>
+        </Card>
+        <Card className="cardg">
+          <Link to="/Dynamics" className="link1">
             <Card.Body id="dynamics">
               <Card.Title className="calcTitle" id="dynamics">
                 Dynamics
@@ -42,35 +41,23 @@ function Calculator() {
                 under dynamics include variables such as force, mass, gravity,
                 acceleration, and friction.
                 <br />
-                <br />
               </Card.Text>
             </Card.Body>
-          </Card>
-        </Link>
-        <Link className="linkcolor" to="/Calculator">
-          <Card className="cardg">
-            <Card.Body id="cM">
-              <Card.Title className="calcTitle" id="cM">
-                Circular Motion
-              </Card.Title>
-              <Card.Text className="calcText" id="cM">
-                <br />
-                Coming Soon...
-                <br />
-                <br />
-                <br />
-                <br />
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
+          </Link>
+        </Card>
+        <Card className="cardg">
+          <Card.Body id="cM">
+            <Card.Title className="calcTitle" id="cM">
+              Circular Motion
+            </Card.Title>
+            <Card.Text className="calcText" id="cM">
+              <br />
+              Coming Soon...
+              <br />
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </CardGroup>
-
-      <br />
-
-      <br />
-
-      <br />
     </div>
   );
 }
